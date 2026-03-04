@@ -1,0 +1,42 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color:#E6E6E6;
+}
+
+h1 {
+    font-family: Bebas Neue;
+    font-size: 5rem;
+    line-height: 1rem;
+    color:#EF2F1E;
+    padding: 1.5rem;
+    text-transform: uppercase;
+}
+p {
+    padding-left: 1.5rem;
+    padding-right: 1.5;
+    line-height: 2rem;
+}
+h2 {
+    color: #ffffff;
+    background-color: #2A2D93;
+    padding: 0.75rem;
+}
+a:link {
+    color: #3F6C03; 
+    text-decoration: none; 
+}
+a:visited {
+    color: #835805;
+    text-decoration: line-through; 
+}
+a:hover {
+    color: #C11105; 
+    text-decoration: overline; 
+}
+hr.new1 {
+    border-top: 2px solid #2A2D93;
+  }
+img  {
+    max-width: 100%; 
+    height: auto;    
+}
