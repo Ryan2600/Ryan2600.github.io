@@ -6,9 +6,15 @@ header{
     background-color: black;
     color: white;
     padding: 2rem;
+    text-align: right;
 }
 main{
-    border: 3px solid red;
+    border: 0px red solid;
+}
+.wrapper {
+    border: 2px black solid; /* shows the edges of the div */
+    margin: 0 auto; /* centers element horizontally*/
+    max-width: 40em; /*in order for the container to appear centered, it needs a width. */
 }
 article{
     background-color: white;
@@ -29,7 +35,38 @@ footer{
 }
 header a:link{
     color: #ffffff;
+    text-decoration: none;
 }
 header a:visited{
     color: #ffffff;
+    text-decoration: none;
+}
+header a:hover{
+    color: #E0FEB5; 
+    text-decoration: none;
+}
+header a:active{
+    color: #FFC7FA;
+    text-decoration: none;
+}
+a:link{
+    color: #217C72;
+}
+a:hover{
+    color: #0110DB;
+}
+a:visited{
+    color: #846D03;
+}
+a:active{
+    color: #C227AF;
+}
+h2.logo{
+    background-color: #CF3245;
+    text-align: center;
+    width: 6rem;
+    height: 6rem;
+    display: grid;
+    align-items: center;
+    border-radius: 50%;
 }
