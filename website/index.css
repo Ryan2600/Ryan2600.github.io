@@ -7,7 +7,8 @@ body{
 .wrapper {
     /**flex-wrap: wrap;**/
     border: 0px;
-    display: grid; 
+    /**display: grid; **/
+    display: flex;
     grid-template-rows: 50px 75px 300px 200px;
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr; 
 }
@@ -15,15 +16,14 @@ body{
     /**flex-wrap: wrap;**/
     border: 0px;
     display: grid;
-    grid-template-rows: 50px 200px 200px 200px 200px;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 150px 300px 300px 300px 600px;
+    grid-template-columns:  1fr 3fr 3fr 3fr 1fr;
 }
 .wrapper3{
     border: 0px;
     margin-left: 5rem;
     margin-top: 3rem;
 }
-
 header {
     display:grid;
     background-color: black; 
@@ -36,7 +36,7 @@ header {
 nav li {
     margin: 1rem;
     list-style-type: none;
-    background-color: black;
+    background-color: #1B811B;
 }
 nav a {
     text-decoration: none;
@@ -44,13 +44,14 @@ nav a {
     padding: 25px;
 }
 nav a:hover {
-    color: palegoldenrod;
-    background-color: black;
+    color: #000080;
+    background-color: #FFF436;
+    font-weight: bold;
 }
 nav ul {
     display: flex;
     justify-content: center;
-    background-color: black; 
+    background-color: #1B811B; 
     padding: 25px;
     margin: 0;
     flex-wrap: wrap;
@@ -69,21 +70,21 @@ nav ul {
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 2;
-    grid-column-end: 3; 
+    grid-column-end: 4; 
     color: white;
     place-items: center;
 }
 .middlebox2{
     background-color:white;
     grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 5;
     grid-column-end: 6;
     padding: 2rem;
 }
 .lowerbox1{
     background-color:white;
-    grid-row-start: 4;
+    grid-row-start: 5;
     grid-row-end: 5;
     grid-column-start: 1;
     grid-column-end: 7;
@@ -123,45 +124,76 @@ footer {
     grid-column-end: 4;
     text-align: center;
 }
-.aboutmebox1 {
-    display: grid; 
-    background-color: red;
+.topspace {
+    display: grid;
+    background-color: white;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.emptyspace {
+    display: grid;
+    background-color: white;
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
 }
-.aboutmebox2 {
-    display: grid;
-    background-color:white;
+.aboutmebox1 {
+    display: grid; 
+    background-color: white;
+    padding: 2rem;
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 3;
+}
+.aboutmebox2 {
+    display: grid;
+    background-color:white;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    padding: 2rem;
+    place-items: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 6;
 }
 .aboutmebox3 {
     display: grid;
     background-color: blue;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    padding: 2em;
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
-    grid-column-end: 4;
-}
+    grid-column-end: 6;
+} 
 .aboutmebox4 {
     display: grid;
-    background-color: brown;
+    background-color: maroon;
+    color: white;
+    text-align:initial;
+    padding: 4rem;
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 6;
 }
 .aboutmebox5 {
     display: grid;
     background-color: burlywood;
+    color: #474747;
+    padding: 4rem;
     grid-row-start: 5;
     grid-row-end: 6;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 6;
+    text-align: center;
 }
 .fill_cell {
     width: 100%;
@@ -181,4 +213,40 @@ footer {
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 3;
+}
+.img_circle{
+    place-items: center;
+    padding: 1px;
+    width: 80%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+    overflow: hidden; 
+  }
+.wrapper4 {
+    border: 0px; /* shows the edges of the div */
+    margin: 0 auto; /* centers element horizontally*/
+    max-width: 40em; /*in order for the container to appear centered, it needs a width. */
+}
+article{
+    background-color: white;
+    border: 1px solid gray;
+    padding: 1.3rem;
+    margin: .5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+}
+.aboutme-h2{
+    text-align: center;
+}
+.bodyPortfolio{
+    background-color: beige;
+    margin: 0;
+}
+.mainPortfolio{
+    border: 0px red solid;
+}
+.ul_center{
+    display: inline-block;
+    text-align: left;
 }
