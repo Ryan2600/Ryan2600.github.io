@@ -33,7 +33,7 @@ nav li {
 }
 nav a {
     text-decoration: none;
-    color: lightgray;
+    color: white;
     padding: 25px;
 }
 nav a:hover {
@@ -42,7 +42,7 @@ nav a:hover {
     font-weight: bold;
 }
 nav ul {
-    font-family: cursive;
+    font-family: cursive,'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
     background-color: #1B811B; 
